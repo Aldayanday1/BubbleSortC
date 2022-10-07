@@ -9,5 +9,11 @@ namespace Bubble_Sort
 
         // Deklarasi variabel int untuk menyimpan banyaknya data pada array
         private int n;
+
+        // Fungsi / Method untuk menerima masukan
+        public void read()
+        {
+
+        }
     }
 }
