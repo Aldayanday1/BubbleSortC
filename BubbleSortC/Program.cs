@@ -5,7 +5,7 @@ namespace Bubble_Sort
     class Program
     {
         //Deklarasi array int dengan ukuran 20
-        private int[] a = new int[20];
+        private int[] aldi = new int[20];
 
         // Deklarasi variabel int untuk menyimpan banyaknya data pada array
         private int n;
@@ -35,7 +35,7 @@ namespace Bubble_Sort
             {
                 Console.Write("<" + (i + 1) + "> ");
                 string s1 = Console.ReadLine();
-                a[i] = Int32.Parse(s1);
+                aldi[i] = Int32.Parse(s1);
             }
         }
         public void display()
@@ -47,7 +47,7 @@ namespace Bubble_Sort
             Console.WriteLine("------------------------------------");
             for (int MF = 0; MF < n; MF++)
             {
-                Console.WriteLine(a[MF]);
+                Console.WriteLine(aldi[MF]);
             }
             Console.WriteLine("");
         }
@@ -58,13 +58,13 @@ namespace Bubble_Sort
                 // Pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
                 for (int MF = 0; MF < n - i; MF++)
                 {
-                    if (a[MF] > a[MF + 1]) // Jika elemen tidak dalam urutan yang benar
+                    if (aldi[MF] > aldi[MF + 1]) // Jika elemen tidak dalam urutan yang benar
                     {
                         //Tukar elemen
                         int temp;
-                        temp = a[MF];
-                        a[MF] = a[MF + 1];
-                        a[MF + 1] = temp;
+                        temp = aldi[MF];
+                        aldi[MF] = aldi[MF + 1];
+                        aldi[MF + 1] = temp;
                     }
                 }
             }
