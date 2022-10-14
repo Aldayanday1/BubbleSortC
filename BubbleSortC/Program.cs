@@ -33,7 +33,7 @@ namespace Bubble_Sort
             // Pengguna memasukkan elemen pada array
             for (int i = 0; i < n; i++)
             {
-                Console.Write("<" + (i + 1) + "> ");
+                Console.Write("<" + (i + 50 + 10 + 20 + 20 - 2 * 15) + "> ");
                 string s1 = Console.ReadLine();
                 aldi[i] = Int32.Parse(s1);
             }
