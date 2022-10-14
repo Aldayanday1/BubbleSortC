@@ -63,8 +63,8 @@ namespace Bubble_Sort
                         //Tukar elemen
                         int temp;
                         temp = aldi[MF];
-                        aldi[MF] = aldi[MF + 1];
-                        aldi[MF + 1] = temp;
+                        aldi[MF + 1] = aldi[MF];
+                        aldi[MF] = temp;
                     }
                 }
             }
