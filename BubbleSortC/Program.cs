@@ -45,9 +45,9 @@ namespace Bubble_Sort
             Console.WriteLine("------------------------------------");
             Console.WriteLine(" Element array yang telah tersusun ");
             Console.WriteLine("------------------------------------");
-            for (int j = 0; j < n; j++)
+            for (int MF = 0; MF < n; MF++)
             {
-                Console.WriteLine(a[j]);
+                Console.WriteLine(a[MF]);
             }
             Console.WriteLine("");
         }
@@ -56,15 +56,15 @@ namespace Bubble_Sort
             for (int i = 1; i < n; i++) // For n - 1 passes
             {
                 // Pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
-                for (int j = 0; j < n - i; j++)
+                for (int MF = 0; MF < n - i; MF++)
                 {
-                    if (a[j] > a[j + 1]) // Jika elemen tidak dalam urutan yang benar
+                    if (a[MF] > a[MF + 1]) // Jika elemen tidak dalam urutan yang benar
                     {
                         //Tukar elemen
                         int temp;
-                        temp = a[j];
-                        a[j] = a[j + 1];
-                        a[j + 1] = temp;
+                        temp = a[MF];
+                        a[MF] = a[MF + 1];
+                        a[MF + 1] = temp;
                     }
                 }
             }
