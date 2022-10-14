@@ -58,7 +58,7 @@ namespace Bubble_Sort
                 // Pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
                 for (int MF = 0; MF < n - i; MF++)
                 {
-                    if (aldi[MF] > aldi[MF + 1]) // Jika elemen tidak dalam urutan yang benar
+                    if (aldi[MF] < aldi[MF + 1]) // Jika elemen tidak dalam urutan yang benar
                     {
                         //Tukar elemen
                         int temp;
